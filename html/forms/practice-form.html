@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Choose your weapon!</title>
+</head>
+<body>
+  <h1>Choose your weapon for the Apocalypse!</h1>
+<form name="weapons" action="success.html" method="post">
+  <fieldset>
+    <div>
+      <label>Full name:</label>
+      <input type="text" name="fullname">
+    </div>
+
+    <div>
+      <label>Email:</label>
+      <input type="email" name="email">
+    </div>
+
+    <div>
+      <label>Password:</label>
+      <input type="password" name="password">
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div>
+      <label>Weapon Name:</label>
+      <input type="text" name="adv-name" placeholder="Name this weapon">
+    </div>
+
+    <div>
+      <label>Type of weapon:</label>
+      <select name="weapon">
+        <option value="axe">Axe</option>
+        <option value="bat">Baseball Bat</option>
+        <option value="knife">Knife</option>
+      </select>
+    </div>
+
+
+    <div>    
+      <label>Choose your gender:</label><br>
+      <input type="radio" name="gender" value="male" checked> male<br> 
+      <input type="radio" name="gender" value="female" checked> female<br> 
+      <input type="radio" name="gender" value="other" checked> other<br>
+    </div>
+
+    <br>
+
+    <div>
+     <textarea rows="4" cols="50">Type any comments here...</textarea>
+    </div>
+  </fieldset>
+
+  <br>
+  
+  <button type="submit">Good Luck!</button>
+</form>
+
+</body>
+</html>

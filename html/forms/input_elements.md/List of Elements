@@ -1,0 +1,12 @@
+*List of Elements
+
+**html- represents the root of an HTML document. All other elements must be descendants of this element.
+**head-provides general information (metadata) about the document, including its title and links to its scripts and style sheets.
+**body-represents the content od an HTML document.  There can be only one <body> in a document.
+**div-is the generic container for flow content, which does not inherently represent anything. It can be used to group lements for stying purposes.
+**form-represents a document section that contains interactive controls to submit information to web server.
+**label- represents a caption for an item in an user interface. It can be associated with a control either by placing the control element inside the <label> element, or by using the attribute.
+**fieldset-is used to group several controls as well as labels within a web form.
+**input-is used to create interactive controls for web-based forms in order to accpet data from the user.  
+**select-element represents a control that presents a menu of options. The options within the menu are represented by <option> elements, which can be grouped by <optgroup> elements.
+**option-is used to create a control representing an item within a <select>, an <optgroup>, or a <datalist> HTML element.

@@ -1,0 +1,26 @@
+.column-1 {
+  color: white;
+  background-color: gray;
+  display: inline-block;
+  vertical-align: top;
+  width: 35%;
+  margin: 20px;
+  border: dashed; 
+  padding: 8px;
+}
+.column-2 {
+  color: yellow;
+  background-color: gray;
+  display: inline-block;
+  vertical-align: top;
+  width: 35%;
+  margin: 20px;
+  border: dashed;
+  padding: 8px;
+}
+body {
+  font-family: Arial;
+}
+footer:hover {
+  background-color: red;
+}

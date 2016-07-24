@@ -1,0 +1,34 @@
+ RELEASE: 0 EQUIP YOUR NEW ROBOT
+
+ - I tell my Robot that there are three columns on the elevator panel.
+- Each column has 10 floor buttons.
+- Numbers start from bottom to top for each column.
+
+- If my Robot wants to go on floor 1-10: 
+	-it should find the column to the left.
+
+- If my Robot wants to go on floor 11-20:
+	-it should find the column to the middle. 
+
+- If my Robot wants to go on floor 21-30:
+	-it should find the column to the right.
+
+RELEASE 1: FIND A REAL-LIFE ALGORITHM
+
+NAME OF TASK: Putting my eye contact lens on
+
+- Open my eye contact lens case.
+- Start to rinse my left eye contacts on palm of my hand with solution for 5 seconds.
+	-it is ready to be put on.
+
+-Repeat with right eye contact lens.
+
+-If there is discomfort in either eyes:
+	- check if it is inside out 
+	- put more solution
+	- reinsert contact lens.
+-Otherwise: 
+	- If it keeps irritatng your eyes:
+		- Discard it and put on new eye contact lens.
+
+
