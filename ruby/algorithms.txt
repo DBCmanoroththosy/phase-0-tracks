@@ -1,17 +1,28 @@
- RELEASE: 0 EQUIP YOUR NEW ROBOT
+Manoroth Thosy
+Dev BootCamp
 
- - I tell my Robot that there are three columns on the elevator panel.
-- Each column has 10 floor buttons.
-- Numbers start from bottom to top for each column.
+RELEASE: 0 EQUIP YOUR NEW ROBOT
 
-- If my Robot wants to go on floor 1-10: 
-	-it should find the column to the left.
+*My Robot will need to know there are two columns on the elevator panel.
+*The left column has 5 buttons and right column has 4 buttons.
+*The left bottom button is the Emergency button.
+*The button above the Emergency button is the Open Door Button and next to it is the Close Door Button (first second column button.
 
-- If my Robot wants to go on floor 11-20:
-	-it should find the column to the middle. 
 
-- If my Robot wants to go on floor 21-30:
-	-it should find the column to the right.
+
+Until we reach to the 5th Floor (last button).
+1.) Start at the Emergency button 
+2.) Then move robot finger 2 inches above to the next button (Door open button) 
+3.) Move your robot finger to the right into the next button (Door close button) 
+4.) move back to the previous button
+
+*Then repeat steps 2-4 over 2x again:
+	* this time buttons are Basement, and 1st Floor.
+	* this time buttons are 2nd Floor and 3rd Floor.
+
+*Lastly repeat steps 2-3:
+	* this time buttons are 4th Floor and 5th Floor.
+
 
 RELEASE 1: FIND A REAL-LIFE ALGORITHM
 
@@ -28,7 +39,5 @@ NAME OF TASK: Putting my eye contact lens on
 	- put more solution
 	- reinsert contact lens.
 -Otherwise: 
-	- If it keeps irritatng your eyes:
 		- Discard it and put on new eye contact lens.
-
 
