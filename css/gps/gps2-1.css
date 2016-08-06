@@ -1,26 +1,47 @@
+header {
+  width: 800px;
+  margin:auto;
+  text-align:center;
+  color: PowderBlue;
+}
+
 .column-1 {
-  color: white;
-  background-color: gray;
   display: inline-block;
   vertical-align: top;
-  width: 35%;
-  margin: 20px;
-  border: dashed; 
-  padding: 8px;
+  width: 500px;
+  text-align: center;
+  border: 3px dotted black;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: bisque;
+  margin-left: 200px;
 }
+
 .column-2 {
-  color: yellow;
-  background-color: gray;
   display: inline-block;
   vertical-align: top;
-  width: 35%;
-  margin: 20px;
-  border: dashed;
-  padding: 8px;
+  width: 500px;
+  text-align: center;
+  border: 3px dotted black;
+  padding: 20px;
+  height: 973px;
+  margin-bottom: 10px;
+  background-color: bisque
 }
-body {
-  font-family: Arial;
-}
+
+
+
 footer:hover {
-  background-color: red;
+  background-color: red
+}
+
+footer {
+  background-color: red
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+body {
+  background-color: Cornsilk;
 }
