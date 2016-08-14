@@ -84,3 +84,16 @@ new_alphabet = alphabet.select { |char| char =~ /[abc]/ }
 random_data = {'a' => 123, 'b'=> 345, 'c' => 369, 'd' => 554}
 
 random_data.select { |key, value| value < 350}
+
+#Array 4 
+
+color = ['blue', 'yellow', 'green', 'white', 'black']
+
+color.take_while { |item| item.length < 10} 
+
+#Hash 4 
+
+bird_population = { 'parrot' => 4, 'pigeon' => 23, "crow" => 10, "flamingo" => 45 }
+
+bird_population.reject { |key, value| value < 44 }
+
