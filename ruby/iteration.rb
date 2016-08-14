@@ -38,3 +38,12 @@ movie_genres.map! do |genre|
 end 
 
 # p movie_genres
+
+colors = ['blue', 'green', 'white', 'red']
+
+colors.map do |item| 
+	puts "#{item} is my favorite color."
+	colors.capitalize
+end 
+
+p colors
