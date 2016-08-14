@@ -1,52 +1,61 @@
-#4.4 solo challenge
+puts "How many employees will be processed?"
+user_input = gets.chomp.to_i 
 
-puts "how many employess will be processed today?"
-number = gets.chomp.to_i 
+user_input.times do |number|   
 
-number.times do |number|
-   puts "This will be our employee number #{number+1} being processed today"  
-end
+	puts "What is your name?"
+	name = gets.chomp
 
-valid_input = false
+	puts "How old are you?"
+	age = gets.chomp.to_i
 
-	until valid_input 
+	puts "What year were you born?"
+	birth_year = gets.chomp.to_i
 
-	puts "Can you name any allergies?"
-	allergies = gets.chomp
+	age_correct = 2016 - age == birth_year 
 	
-	if allergies == "sunshine"
-		puts "Probably a vampire"
-		valid_input = true 
-	else puts "Anything else?"
+	puts "Our company cafeteria serves garlic bread. Should we order some for you?"
+	garlic_bread = gets.chomp
+	likes_garlic_bread = garlic_bread == 'yes'
+
+	puts "Would you like to enroll in the company's health insurance?"
+	insurance = gets.chomp
+	wants_insurance = insurance == 'yes'
+
+	    result = 'Results inconclusive.'
+		
+		
+		if age_correct && (likes_garlic_bread || wants_insurance)
+			result = "Probably not a vampire."
+		end 
+
+		if !age_correct && (!likes_garlic_bread || !wants_insurance)
+			result = "Probably a vampire"
+		end 
+
+		if !age_correct && !likes_garlic_bread && !wants_insurance
+			result = "Almost certainly a vamprie"
+		end 
+
+		if name == ("Drake Cula" || "Tu Fang")
+			result = "Definitely a vampire."
+		end
+	 
+	loop do 
+
+	puts "Do you have any allergies? Type 'done' to exit."
+	allergies = gets.chomp
+
+		case allergies
+			when "sunshine" 
+				result = "Probably a vampire."
+			break
+			when "done"
+			break
+			
+		end 
 	end 
-end 	
-
-puts "What is you name?"
-name = gets.chomp 
-
-if name == "Drake Cula" || name == "Tu Fang"
-	puts "Definitely a vampire"
+	 puts result
 end 
 
-puts "What is your age? What year were you born?"
-age = gets.chomp 
-
-puts "Would you like some garlic breads? (yes/no)"
-garlic_bread = gets.chomp 
-
-puts "Would like to enroll in the company's health insurance? (yes/no)"
-health_insurance = gets.chomp 
-
-
-if (garlic_bread == "yes") || (age == true) 
-	puts "Probably not a vampire"
-end 
-
-
-if (age == false) || (garlic_bread == "no")
-	puts "Probably a vampire"
-end
-
-if (age == false) && (garlic_bread == "no") || (health_insurance == "no")
-	puts "Most likely a vampire"
-end 
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends." 

@@ -25,7 +25,6 @@ Until we reach to the 5th Floor (last button).
 *Lastly repeat steps 2-3:
 	* this time buttons are 4th Floor and 5th Floor.
 
-
 RELEASE 1: FIND A REAL-LIFE ALGORITHM
 
 NAME OF TASK: Putting my eye contact lens on
@@ -42,4 +41,5 @@ NAME OF TASK: Putting my eye contact lens on
 	- reinsert contact lens.
 -Otherwise: 
 		- Discard it and put on new eye contact lens.
+
 
