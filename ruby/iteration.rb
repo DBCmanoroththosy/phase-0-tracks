@@ -47,3 +47,18 @@ colors.map do |item|
 end 
 
 #p colors
+
+#Release 2: Use the Documentation
+
+#Array 1 
+
+number = [1, 2, 3, 4, 5, 6]
+
+number.delete_if { |digits|  digits < 3 }
+
+#Hash 1 
+
+sports = {"football" => 1, "soccer" => 2, "baseball" => 3, "volleyball" => 4}
+
+
+sports.delete_if {|key, value| value < 2 } 
