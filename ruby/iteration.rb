@@ -74,4 +74,13 @@ final_score = { 'football' => 23, 'soccer' => 2, 'volleyball' => 24, 'baseball' 
 final_score.keep_if {|key, value| key == 'football' }
 
 
+#Array 3
+alphabet = ['a', 'b', 'c', 'd', 'e']
 
+new_alphabet = alphabet.select { |char| char =~ /[abc]/ } 
+
+#Hash 3 
+
+random_data = {'a' => 123, 'b'=> 345, 'c' => 369, 'd' => 554}
+
+random_data.select { |key, value| value < 350}
