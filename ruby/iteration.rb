@@ -43,7 +43,7 @@ colors = ['blue', 'green', 'white', 'red']
 
 colors.map do |item| 
 	puts "#{item} is my favorite color."
-	colors.capitalize
+	item.capitalize
 end 
 
-p colors
+#p colors
