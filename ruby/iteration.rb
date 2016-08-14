@@ -62,3 +62,16 @@ sports = {"football" => 1, "soccer" => 2, "baseball" => 3, "volleyball" => 4}
 
 
 sports.delete_if {|key, value| value < 2 } 
+
+#Array 2 
+numbers = [1,2,3,4,5,6,7,8,9,10]
+
+numbers.keep_if { |num| num > 5}
+
+#Hash 2 
+final_score = { 'football' => 23, 'soccer' => 2, 'volleyball' => 24, 'baseball' => 4}
+
+final_score.keep_if {|key, value| key == 'football' }
+
+
+
