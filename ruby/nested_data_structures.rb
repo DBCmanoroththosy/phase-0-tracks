@@ -1,71 +1,40 @@
-highway = {
-    car: {
-        vehicle_type: 'Family Van',
-        vehicle_info: {
-            total_seats: 8,
-            seats_available: 3
-        },
-        passenger_names: [
-            "Dad", 
-            "Mom", 
-            "Jesse", 
-            "Baby Jay", 
-            "Uncle Steve"
-            ]
+# In phase-0-tracks/ruby/nested_data_structures.rb, design and build a nested data structure to represent a real-world construct. You can choose the construct: Is it a highway full of cars full of people? A classroom full of desks full of supplies? A fashion show with multiple runways featuring multiple models? Build something that will use a mix of hashes and arrays.
+
+# Once you've built it, print a few individual pieces of deeply nested data from the structure, showing that you know how to use multiple indexes or hash keys (or both) to access nested items. Try to demonstrate a few different types of access.
+
+classroom = {
+    first_period: { 
+        class_name: 'Math Class',
+        supplies: {
+            calculators: 12,
+            rulers: 20,
+            scratch_paper: 100
     },
-    truck: {
-        vehicle_type: 'Truck',
-        vehicle_info: {
-            total_seats: 2,
-            seats_available: 0
-        },
-        passenger_names: [
-            "Bonnie", "Clyde"
+    desks: {
+        total_seats: 30
+    },
+    extra_credit: [
+            "volunteer hours", "tutoring", "homework","math projects" 
         ]
     },
-    motorcycle: {
-        vehicle_type: 'Motorcycle',
-        vehicle_info: {
-            total_seats: 1,
-            seats_available: 0 
-        },
-        passenger_names: [
-            "Big Drew That Drinks ALOT of Mountain Dew"
-            ]
+    second_period: { 
+    class_name: 'English Class',
+    supplies: {
+        reading_booklets: 30,
+        pencils: 50,
+        erasers: 25
     },
-    jeep: {
-        vehicle_type: 'Jeep',
-        vehicle_info: {
-            total_seats: 5,
-            seats_available: 0 
-        },
-        passenger_names: [
-            "Sasha",
-            "Jackie",
-            "Sandy",
-            "Laura",
-            "Lexi"
-            ]
+    desks: {
+        total_seats: 40
+    },
+    extra_credit: [
+            "volunteer hours", "tutoring", "homework","essays" 
+        ]
     }
-
 }
 
-#p highway[:car][:vehicle_type].downcase 
-
-#p highway[:car][:vehicle_info]
-
-#p highway[:jeep][:passenger_names][3]
-
-#p highway[:jeep][:passenger_names].reverse 
-
-#p highway[:motorcycle][:vehicle_type].upcase
-
-#p highway[:motorcycle][:passenger_names].empty?
-
-#p highway[:car][:passenger_names].delete_at(2)
-
-#p highway[:truck][:vehicle_info].clear
-
-#p highway[:jeep][:vehicle_info].keys.reverse
-
-#p highway
+classroom[:first_period][:first_period]
+classroom[:second_period][:class_name].downcase
+classroom[:first_period][:extra_credit].push('field trip')
+classroom[:second_period][:extra_credit].delete('tutoring')
+classroom[:first_period][:class_name].upcase 
