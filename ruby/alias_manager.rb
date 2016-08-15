@@ -60,7 +60,13 @@ loop do
 	  agent_name[user_input] = convert_name(user_input)
 end 
 
+#Use a data structure to store the fake names as they are entered. 
+#When the user exits the program, iterate through the data structure and print all 
+#of the data the user entered. 
 
+agent_name.each do |real_name, fake_name| 
+	puts "Hi, my name is #{real_name}, but people at my work place call me #{fake_name}."
+end 
 
 
 
