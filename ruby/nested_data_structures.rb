@@ -32,3 +32,9 @@ classroom = {
         ]
     }
 }
+
+classroom[:first_period][:first_period]
+classroom[:second_period][:class_name].downcase
+classroom[:first_period][:extra_credit].push('field trip')
+classroom[:second_period][:extra_credit].delete('tutoring')
+classroom[:first_period][:class_name].upcase 
