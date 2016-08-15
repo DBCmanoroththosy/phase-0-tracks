@@ -43,3 +43,29 @@ def convert_name(name)
 end 
 
 convert_name("Felecia Torres")
+
+
+#Provide a user interface that lets a user enter a name and get a fake name back. 
+#Let the user do this repeatedly until they decide to quit by typing 'quit'. 
+#(They might just hit Enter to continue.)
+
+agent_name = {}
+
+loop do 
+	puts "Enter your name to recieve your spy name. Type 'quit' to exit"
+	user_input = gets.chomp 
+	
+	break if user_input == 'quit'
+	  puts convert_name(user_input)
+	  agent_name[user_input] = convert_name(user_input)
+end 
+
+
+
+
+
+
+
+
+
+
