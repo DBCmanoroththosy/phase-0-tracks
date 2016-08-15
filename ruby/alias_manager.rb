@@ -41,3 +41,5 @@ def convert_name(name)
 	
 	final_conversion 
 end 
+
+convert_name("Felecia Torres")
