@@ -1,14 +1,14 @@
-#PUPPY--------------------
-#French Bull Dog 
+# PUPPY--------------------
+# American Bull Dog 
 
-#CHARACTERISTICS ---------
-#Fur Color: varies
-#Eye Color: varies
-#Friendly: yes
-#Size: compact
-#Drooling: minimal
+# CHARACTERISTICS ---------
+# Fur Color: varies
+# Eye Color: varies
+# Friendly: yes
+# Size: buldgy
+# Drooling: very sloppery
 
-#BEHAVIOR ----------------
-#Playful
-#Energetic
-#Intense
+# BEHAVIOR ----------------
+# Lick
+# Play dead
+# Spin around 
