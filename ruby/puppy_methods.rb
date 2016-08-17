@@ -51,14 +51,17 @@ geodude = Pokemon.new
 geodude.poke_battle("Squirtle")
 geodude.discover("Onyx")
 
-index = 0 
+instance = 0 
 pokedex = []
 
 while instance < 50 
-	pokemon[index] = pokemon.index
-	pokedex << pokemon 
+	pokemon = Pokemon.new 
+	pokedex << pokemon  
 	instance += 1 
 end 
 
-
+pokedex.each do |pokemon|
+	puts "#{pokemon} number #{pokedex.index(pokemon) + 1}"
+	pokemon.poke_battle("Squirtle")
+	pokemon.discover("Geodude")
 end 
