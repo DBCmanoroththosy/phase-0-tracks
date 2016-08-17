@@ -21,6 +21,9 @@ class Puppy
   	puts "plays dead for #{length} per seconds."
   end
 
+  def initialize 
+  		puts "initializing new puppy instance..."
+  end 
 end
 
 spot = Puppy.new 
