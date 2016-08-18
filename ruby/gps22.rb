@@ -13,6 +13,10 @@ def create_a_list(incoming_items)
 	
 	incoming_items.split(' ').each do |item|
 		grocery_list[item] = 1 
+		grocery_list['lemonade'] = 2  
+		grocery_list['tomatoes'] = 3
+		grocery_list['onions'] = 1 
+		grocery_list['ice cream'] = 1 
 	end 
 		grocery_list
 end 
@@ -68,3 +72,15 @@ def print_a_list(grocery_list)
 end 
 
 print_a_list(my_list)
+
+
+
+
+
+
+
+
+
+
+
+
