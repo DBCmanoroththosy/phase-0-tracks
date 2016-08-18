@@ -58,6 +58,18 @@ end
 
 update_quantity('pizza', my_list, 4)
 
+# Method to remove lemonade item from your list 
+# input: list 
+# steps: delete lemonade item 
+# output: update hash list 
+
+def remove_lemonade(grocery_list)
+	grocery_list.delete('lemonade')
+	grocery_list
+end 
+
+remove_lemonade(my_list)
+
 # Method to print a list and make it look pretty
 # input: add LIST
 # steps: go through this list and print each key with the value
