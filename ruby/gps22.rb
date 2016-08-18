@@ -70,6 +70,18 @@ end
 
 remove_lemonade(my_list)
 
+# method to update the ice cream from your list 
+# input: list 
+# steps: change quantity for ice cream 
+# output: upaate hash list 
+
+def update_quantity(grocery_list)
+	grocery_list['ice cream'] = 1 
+	grocery_list
+end 
+
+update_quantity(my_list)
+
 # Method to print a list and make it look pretty
 # input: add LIST
 # steps: go through this list and print each key with the value
