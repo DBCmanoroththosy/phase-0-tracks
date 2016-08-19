@@ -98,9 +98,27 @@ end
 print_a_list(my_list)
 
 
+#REFLECT
+
+# What did you learn about pseudocode from working on this challenge?
+# I've learned that it can be an useful tool in guiding someone working through the algorithm.  When I was writing my pseudocoding for this challenge, I found some struggle in writing the correct format to understand my steps. This is an important thing to mention just because you want to write out your steps where it is clear to perform that specific step.
+
+# What are the tradeoffs of using arrays and hashes for this challenge?
+# The tradeoff between theses two data structures is that we were able to create an empty hash and manipulate out argument to make it an array first then store it into our hash.
+
+# What does a method return?
+# A method returns the evaluated result of the last line that is executed.
+
+# What kind of things can you pass into methods as arguments?
+# You can pass in strings and integers
 
 
+# How can you pass information between methods?
+# In this challenge, I was able to store my returned value of the create_a_list method in a variable called my_list then passing that new variable into our other methods as arguments.  
 
+# What concepts were solidified in this challenge, and what concepts are still confusing?
+# This challenge was mainly on exchanging information between methods an pseudocoding.  By doing so, it made me think how flexible Ruby is and the many alternative ways we can go about to find our answers.  
+#Right now, I think I have a good idea of the concepts, but I know I can get confused while pseudocoding. I think what gets me confuse is not being 100% sure if my psuedocode is correct to move on and code.  From my experience, I sometimes would have to go back and fix my psedocode because something was wrong with my code.  Thus, I feel unsure if I should complete my pseudocode or should pseudocode as I code?  With that begin said, I think I'll still continue to do my best to pseudocode the proper way and hopefully I'll get better at it!  
 
 
 
