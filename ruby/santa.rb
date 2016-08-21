@@ -1,4 +1,4 @@
-# Release 0: Bring Sant to Life 
+# Release 0: Bring Santa to Life 
 
 # Pseudocode
 # create a speak method that says print "Ho, ho, ho! Haaaappy holidays!"
@@ -12,8 +12,8 @@
 # enter reindeer_ranking array
 # enter age that has a default of 0 
 class Santa 
-	attr_accessor :gender
-	attr_reader :age, :ethnicity
+	attr_accessor :gender, :age 
+	attr_reader :ethnicity
 	def speak 
 	  puts "Ho, ho, ho! Haaaapy holidays!"
 	end 
@@ -76,15 +76,15 @@ class Santa
 	end 
 end 
 
-santa = Santa.new('male','Brazilian')
-santa.speak
-santa.eat_milk_and_cookies("lemon cookie")
-santa.age
-santa.get_mad_at("Vixen")
-santa.gender = "Alien from outer space"
-puts "That Santa told me that he is #{santa.age + 65} years old and a quarter #{santa.ethnicity}."
-puts "He was also a #{santa.gender}."
-p santa
+# santa = Santa.new('male','Brazilian')
+# santa.speak
+# santa.eat_milk_and_cookies("lemon cookie")
+# santa.age
+# santa.get_mad_at("Vixen")
+# santa.gender = "Alien from outer space"
+# puts "That Santa told me that he is #{santa.age + 65} years old and a quarter #{santa.ethnicity}."
+# puts "He was also a #{santa.gender}."
+# p santa
 
 # create an empty array 
 # add some diverse initialization to your file as driver code
@@ -102,11 +102,31 @@ p santa
 # end 
 
 
+# Release 4: Build Many Santas
+# Use our array of example genders and an array of example ethnicities (and feel free to add to it if you like -- each array could have a lot more options in it!) to create your Santas with a randomly selected gender and a randomly selected ethnicity. (How do you randomly select an array item? The Array documentation should be able to help you out there!)
+# Set your new Santa's age to a random number between 0 and 140.
+# No need to store your Santas in a data structure, but your program should print out the attributes of each Santa using the instance methods that give you access to that data.
 
 
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
+santa = []
+count = 0 
 
+while count <= 100
+	gender = example_genders.sample
+	ethnicity = example_ethnicities.sample 
+	santa = Santa.new(gender, ethnicity)
+	santa.age = rand(0..140)
+	puts "Santa Clones Made At The North Pole:"
+	puts "Age: #{santa.age}"
+	puts "Gender: #{santa.gender}"
+	puts "ethnicity: #{santa.ethnicity}"
+	puts "-" * 25
 
+	count += 1
+end 
 
 
 
