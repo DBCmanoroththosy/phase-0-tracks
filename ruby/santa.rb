@@ -43,3 +43,28 @@ santa = Santa.new('male','Brazilian')
 santa.speak
 santa.eat_milk_and_cookies("lemon cookie")
 
+# create an empty array 
+# add some diverse initialization to your file as driver code
+# then loop it
+
+santa = []
+diverse_santas = [['agender','Black'],['female','Latino'],['bigender','White'], ['male','Japanese'],['gender','Hispanic']]
+
+puts "List Of Diverse Santas:"
+diverse_santas.each do |gender, ethnicity|
+	santa << Santa.new(gender, ethnicity)
+	puts "Found a #{ethnicity} #{gender} at the Santa Parade!"
+	puts "Santa instance number #{santa.length} in the array"
+	puts "-" * 25
+end 
+
+
+
+
+
+
+
+
+
+
+
