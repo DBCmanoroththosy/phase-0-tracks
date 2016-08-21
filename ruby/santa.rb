@@ -12,6 +12,8 @@
 # enter reindeer_ranking array
 # enter age that has a default of 0 
 class Santa 
+	attr_accessor :gender
+	attr_reader :age, :ethnicity
 	def speak 
 	  puts "Ho, ho, ho! Haaaapy holidays!"
 	end 
@@ -55,22 +57,22 @@ class Santa
 		end 
 
 		#Add Setter Methods
-		def gender=(new_gender)
-			@gender = new_gender
-		end 
+		# def gender=(new_gender)
+		# 	@gender = new_gender
+		# end 
 
 		#Add Getter Methods
-		def age 
-			@age
-		end 
+		# def age 
+		# 	@age
+		# end 
 
-		def ethnicity
-			@ethnicity
-		end 
+		# def ethnicity
+		# 	@ethnicity
+		# end 
 		
-		def gender
-			@gender 
-		end 
+		# def gender
+		# 	@gender 
+		# end 
 	end 
 end 
 
