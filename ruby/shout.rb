@@ -1,24 +1,31 @@
-module Shout
+# module Shout
+#   def self.yell_angrily(words)
+#     words + "!!!" + " :("
+#   end
+
+#   def self.yelling_happily(words)
+#   	words + "!!" + " =)"
+#   end 
+# end
+
+# p Shout.yell_angrily("Hola")
+# p Shout.yelling_happily("Heyyyyy girlll")
+
+module Shout 
 	def noise(words)
-		puts "{words}!!!"
+		"#{words}"
 	end
 end 
 
-#p Shout.yell_angrily("hey")
-#p Shout.yelling_happily("I understand modules")
-
-class Wolf 
-	include Shout 
-end 
-
-class Cow
+class Loud_music
 	include Shout
 end 
 
-wolf = Wolf.new
-wolf.noise("ahhh wooooooooo")
+class Angry_neighbor
+	include Shout
+end 
 
-cow = Cow.new
-cow.noise("mooooooooooooooo")
-
-
+music = Loud_music.new
+p music.noise("I like to move it move it...")
+neighbor = Angry_neighbor.new
+p neighbor.noise("Ahhhhh, turn down your music")
