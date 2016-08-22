@@ -68,3 +68,8 @@ poke_name.each do |name|
 	puts "-" * 30 
 end 
 
+poke_status.each do |poke|
+	poke.ran_away 
+	poke.battle('body slam')
+	poke.speak
+end 
