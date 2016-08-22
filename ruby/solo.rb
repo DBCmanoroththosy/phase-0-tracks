@@ -1,11 +1,11 @@
-# pseudocode 
 # release 0: Design a class 
-# create a class 
-# include at least 3 attributes (usgin at least 2 data types)
-# include 3 methods, at least one of which takes an argument
+  # create a class 
+  # include at least 3 attributes (usgin at least 2 data types)
+  # include 3 methods, at least one of which takes an argument
+
 # release 1: Write your class
-# add attr_reader and attr_accessor
-# write initialize method with at least one attribute to be set 
+  # add attr_reader and attr_accessor
+  # write initialize method with at least one attribute to be set 
 
 class Pokedex
 	attr_reader :location, :tech 
@@ -35,3 +35,9 @@ pokemon = Pokedex.new('Charizard')
 pokemon.speak('Charrrrizzaaardd!')
 pokemon.battle('body slam')
 pokemon.fly
+
+# release 2: Use your Class in a program
+  # create an empty array 
+  # prompt user to enter your atribute. Let them enter as many instances on your user interface.
+  # then loop it and exit by typing "done"
+  # iterate your array and print your attributes of each instance as a cofirmation message of what was created.
