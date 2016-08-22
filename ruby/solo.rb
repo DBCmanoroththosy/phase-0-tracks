@@ -1,81 +1,70 @@
-#build Class 
-#create at least 3 attributes (using atl least two data types) whose values will vary from instance to instance  (ex. age)
-#at least 3 methods, at least one which takes an argument 
-#Use attr_reader and attr_accessor
-#Use an initialize method that sets at least one attribute
-class Dragon 
-	attr_reader :name  
-	attr_accessor :color 
+# pseudocode 
+# release 0: Design a class 
+# create a class 
+# include at least 3 attributes (usgin at least 2 data types)
+# include 3 methods, at least one of which takes an argument
+# release 1: Write your class
+# add attr_reader and attr_accessor
+# write initialize method with at least one attribute to be set 
+
+class Pokedex
+	attr_reader :location, :tech 
+	attr_accessor :name 
 	
-	def initialize(color, name)
-		@name = name 
-		@age = [4, 5, 6, 7, 8]
-		@color = color 
-		@weight = [700, 845, 901, 1032, 1178]
-		
-		p "initialize Dragon instance...."
-	end 
-	
-	def fly_off(altitude)
-		puts "#{@name} flew off at #{altitude} feet."
-	end 
-	
-	def fire_blast(size)
-		puts "The size of the fire blast was #{size}!"
-		puts "-" * 40 
+	def initialize(name)
+	  @name = name 
+	  @tech = "flamethrower"
+	  @location = "Pallet Town"
+	  puts "Processing Pokemon selection..."
 	end
 	
-	def about 
-		puts "Name: #{@name}"
-		puts "Color: #{@color}"
+	def speak(say_something)
+	  puts "#{@name} said #{say_something}"
 	end 
+
+	def battle(attack)
+	  puts "#{@name} used #{attack}"
+	end 
+
+	def fly 
+	  puts "#{@name} took off in the air"
+	end 
+end 
+
+# pokemon = Pokedex.new('Charizard')
+# pokemon.speak('Charrrrizzaaardd!')
+# pokemon.battle('body slam')
+# pokemon.fly
+
+# release 2: Use your Class in a program
+  # create an empty array 
+  # prompt user to enter your atribute. Let them enter as many instances on your user interface.
+  # then loop it 
+  # create another empty array that will be use to push your initialize attribute  
+  # iterate your array and print your attributes of each instance as a cofirmation message of what was created.
+
+poke_name = []
+
+puts "How many Pokemons would like to processed?"
+user_input = gets.chomp.to_i 
+
+user_input.times do |number|
 	
+	puts "What is your Pokemon name?"
+	name = gets.chomp 
+	poke_name << name 
 end 
 
-#add driver code
+p poke_name
 
-#dragon = Dragon.new("green", "Drago")
-#dragon.about
-#dragon.fly_off(4500)
-#puts "#{dragon.name}'s scales are #{dragon.color}."
-#dragon.fire_blast("hugeeeee")
-#dragon.color = "The Dragon's color changed into pure gold."
-#dragon = []
+poke_status = []
 
+puts "My List Of Pokemons:"
 
-#create a loop (as much instances as they like)
-#prompt the user for each attribute 
-#convert inputs in appropriate data type
-#store these class instances in an array 
-
-
-names = []
-ages = []
-colors = []
-weights = []
-
-loop do 
-
-puts "Type 'yes' if you would like to create information for a dragon or type 'done' to exit."
-user_input = gets.chomp 
-
-break if user_input == 'done'
-
-		puts "name?"
-		name = gets.chomp 
-		
-		puts "age?"
-		age = gets.chomp 
-		
-		puts "color?"
-		color = gets.chomp
-		
-		puts "weight?"
-		weight = gets.chomp
-
-p names << name 
-p ages << age 
-p colors << color 
-p weights << weight 
-
+poke_name.each do |name|
+	puts "Found a Pokemon name #{name} ...."
+	poke_status << Pokedex.new(name)
+	puts "There are now #{poke_status.length} Pokemon instances in the array."
+	puts "-" * 30 
 end 
+
