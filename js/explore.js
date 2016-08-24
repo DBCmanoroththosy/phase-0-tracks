@@ -16,4 +16,12 @@ function reverse(word) {
 	return greeting.join('')
 }
 
-console.log(reverse("hello"));
+var reverseHello = console.log(reverse("hello"));
+
+var reverseHello = true; 
+
+if (reverseHello) {
+	console.log("I like to greet people, by saying hello backwards! =)");
+} else {
+	console.log("Well, hello there?");
+}
