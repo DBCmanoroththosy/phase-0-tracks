@@ -6,3 +6,14 @@
 // then create a for loop
 // manipulate the argument string to input the specfic character of the index 
 // put together the string as one 
+
+function reverse(word) {
+	greeting = []
+
+	var wordLength = word.length
+	for(var i = 0; i <= wordLength; i++)
+	greeting.push(word.charAt(wordLength - i));
+	return greeting.join('')
+}
+
+console.log(reverse("hello"));
