@@ -33,3 +33,21 @@ console.log(find_longest_name(name_arr));
 //then create a function
 //that does a if/else statement
 //make sure you do something that makes the statement 'true' or 'false'
+
+var uber_driver_1 = {name: "Steven", years_of_exper: 2};
+var uber_driver_2 = {name: "Pablo", years_of_exper: 1};
+var uber_driver_3 = {name: "Joe", years_of_exper: 2};
+
+function lookup_uber_drivers() {
+
+	if ((uber_driver_1['name'] == uber_driver_2['name']) && (uber_driver_1['years_of_exper'] == uber_driver_2['years_of_exper'])) {
+		return false 
+	} else if ((uber_driver_2['name'] == uber_driver_3['name']) || (uber_driver_2['years_of_exper'] == uber_driver_3['years_of_exper'])) {
+		return false   
+	} else ((uber_driver_1['name'] == uber_driver_3['name']) || (uber_driver_1['years_of_exper'] == uber_driver_3['years_of_exper']))
+	{
+		return true 
+	}	
+};
+	
+lookup_uber_drivers();
