@@ -7,7 +7,7 @@
 		//find a way to manipulate the phrase to return the longest word or phrase
 //add drive code to test function
 
-var pokemon_arr = ["pikachu", "bulbasaur", "squirtle", "charmander"];
+var name_arr = ["Harry", "Jonathan", "Peter", "Witherspoon"];
 
 function find_longest_name(string_arr) {
 	
@@ -26,7 +26,7 @@ function find_longest_name(string_arr) {
 	return longest_name;
 }
 
-console.log(find_longest_name(pokemon_arr));
+console.log(find_longest_name(name_arr));
 
 //Release 1: Psuedocode 
 //need to create variables with key_value 
@@ -62,14 +62,19 @@ lookup_uber_drivers();
 function word_strings(integer) {
 
 	var random_word_arr = [];
-	var random_length = ""
-	for (var i = 0; i < random.length; i++) {
+	var random_length = 0
+	//word1 = "nnnfph"
+	
+	
+	for (var i = 0; i < integer.length; i++) {
 
-		var random_num = //rand(25)
+		if(random_length[i].length < integer.length) {
+		//var random_word = Random.new.bytes(1..10)
+		//random_word_arr
+		}
 	}
+	return random_word_arr
 }
-
-
-
+console.log(word_strings(3));
 
 
