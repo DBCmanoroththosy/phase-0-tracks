@@ -20,13 +20,13 @@ class VirusPredictor
   end
 # instance method virus_effects that calls other 2 methods
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    predicted_deaths#(@population_density, @population, @state)
+    speed_of_spread#(@population_density, @state)
   end
 
   private
 # method that rounds up the number of deaths
-  def predicted_deaths(population_density, population, state)
+  def predicted_deaths#(population_density, population, state)
     # predicted deaths is solely based on population density
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
@@ -44,7 +44,7 @@ class VirusPredictor
 
   end
 # method that rounds up the spread of the state in months
-  def speed_of_spread(population_density, state) #in months
+  def speed_of_spread#(population_density, state) #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
     speed = 0.0
@@ -84,7 +84,6 @@ end
 
 # alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
 # alaska.virus_effects
-
 STATE_DATA.each do |state, value|
   output = VirusPredictor.new(state, value[:population_density], value[:population])
   output.virus_effects
