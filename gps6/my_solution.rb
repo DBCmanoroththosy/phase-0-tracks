@@ -1,11 +1,14 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge [by myself, with: Jason Bulicekj].
+# We spent [2] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
-#
+# Require_relative is a cool way to link any file to another file, so we can exchange information or access them.
+# Require_relative complements the builtin method require by allowing you to load a file that is relative to the file containing the require_relative statement.
+# When you use require to load a file, you are usually accessing functionality that has been properly installed, and made accessible, in your system. require does not offer a good solution for loading files within the project’s code. This may be useful during a development phase, for accessing test data, or even for accessing files that are "locked" away inside a project, not intended for outside use.
+
+
 require_relative 'state_data'
 
 class VirusPredictor
