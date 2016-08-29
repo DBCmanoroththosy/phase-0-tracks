@@ -51,3 +51,11 @@ function lookup_uber_drivers() {
 };
 	
 lookup_uber_drivers();
+
+//Release 2: Pseudocode 
+//create a function 
+	//create empty array
+	//do something:
+		//builds array with words from integer 
+//Add driver code that generates an array, prints the array, feeds the array to your "longest" function and prints the result.
+
