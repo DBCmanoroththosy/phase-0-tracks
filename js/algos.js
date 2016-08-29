@@ -59,3 +59,22 @@ lookup_uber_drivers();
 		//builds array with words from integer 
 //Add driver code that generates an array, prints the array, feeds the array to your "longest" function and prints the result.
 
+function word_strings(integer) {
+
+	var random_word_arr = [];
+	var random_length = 0
+	//word1 = "nnnfph"
+	
+	
+	for (var i = 0; i < integer.length; i++) {
+
+		if(random_length[i].length < integer.length) {
+		//var random_word = Random.new.bytes(1..10)
+		//random_word_arr
+		}
+	}
+	return random_word_arr
+}
+console.log(word_strings(3));
+
+
