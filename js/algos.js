@@ -27,3 +27,9 @@ function find_longest_name(string_arr) {
 }
 
 console.log(find_longest_name(name_arr));
+
+//Release 1: Psuedocode 
+//need to create variables with key_value 
+//then create a function
+//that does a if/else statement
+//make sure you do something that makes the statement 'true' or 'false'
